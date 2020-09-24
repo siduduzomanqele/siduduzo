@@ -13,6 +13,9 @@ Resource                  ../resources/environment.robot
 Resource                  ../resources/sign_in.robot
 Suite Setup    Run Keywords  Open Browser  ${F_URL}  ${BROSWER}   AND  Maximize Browser Window
 *** Test Case ***
+Login To see this page
+    [Tags]  Locked  Standard  Problem  Performance
+    sign_in.Login required
 Locked user Login
     [Tags]  Locked
     sign_in.Login  ${LOCK_USER}  ${PASSWORD}
