@@ -10,9 +10,11 @@ Library             SeleniumLibrary
 Library             ScreenCapLibrary
 Resource                  ../resources/csv.robot
 Resource                  ../resources/environment.robot
-Resource                  ../resources/shop.robot
+Resource                  ../resources/product.robot
+Resource                  ../resources/cart.robot
+Resource                  ../resources/checkout.robot
 *** Test Case ***
-Place and finilize the order
-    [Tags]   QA  UAT  Problem  Standard  Performance
-    shop.Place an Order
+Place and checkout the order
+    [Tags]   QA  UAT  Problem  Standard
+    checkout.check out items
     
